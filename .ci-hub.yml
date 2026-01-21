@@ -1,10 +1,11 @@
 version: '1.0'
 repo:
-  owner: unknown
+  owner: jguida941
   name: cihub-test-monorepo
   language: java
   default_branch: main
   dispatch_workflow: hub-ci.yml
+  subdir: java
 java:
   version: '21'
   build_tool: maven
