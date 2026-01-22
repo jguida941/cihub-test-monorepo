@@ -45,6 +45,7 @@ thresholds:
   mutation_score_min: 70
   max_critical_vulns: 0
   max_high_vulns: 0
+  max_checkstyle_errors: 3
 reports:
   retention_days: 30
 language: java
