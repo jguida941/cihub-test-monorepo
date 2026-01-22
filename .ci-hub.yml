@@ -49,4 +49,4 @@ reports:
   retention_days: 30
 language: java
 install:
-  source: pypi
+  source: git
