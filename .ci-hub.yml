@@ -5,11 +5,6 @@ repo:
   language: java
   default_branch: main
   dispatch_workflow: hub-ci.yml
-  targets:
-  - language: python
-    subdir: python
-  - language: java
-    subdir: java
 java:
   version: '21'
   build_tool: maven
@@ -49,4 +44,4 @@ reports:
   retention_days: 30
 language: java
 install:
-  source: git
+  source: pypi
