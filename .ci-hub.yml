@@ -3,13 +3,14 @@ repo:
   owner: jguida941
   name: cihub-test-monorepo
   language: java
-  default_branch: main
+  default_branch: audit/cihub-audit-2026-01-27
   dispatch_workflow: hub-ci.yml
   targets:
   - language: python
     subdir: python
   - language: java
     subdir: java
+  hub_workflow_ref: audit/owasp-no-key
 java:
   version: '21'
   build_tool: maven
@@ -45,7 +46,6 @@ thresholds:
   mutation_score_min: 70
   max_critical_vulns: 0
   max_high_vulns: 0
-  max_checkstyle_errors: 3
 reports:
   retention_days: 30
 language: java
